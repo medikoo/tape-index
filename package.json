@@ -1,6 +1,6 @@
 {
   "name": "tape-index",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Automatically index and test all modules",
   "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
   "keywords": [
