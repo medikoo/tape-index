@@ -10,4 +10,4 @@
 
 ### Tests
 
-  $ npm test
+	$ npm test
