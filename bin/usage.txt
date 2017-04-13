@@ -1,0 +1,10 @@
+tape-index v${ VERSION } - Generates tests index
+
+Usage: tape-index [path] {OPTIONS}
+
+Options:
+
+    --version, -v  Display version
+    --help,    -h  Show this message
+    --clear,   -c  Remove generated tape.index.js file
+

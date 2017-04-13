@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+"use strict";
+
+Error.stackTraceLimit = Infinity;
+
+var resolve       = require("path").resolve
+  , readFile      = require("fs2/read-file")
+  , unlink        = require("fs2/unlink")
+  , testIndexName = require("../lib/test-index-name")
+  , meta          = require("../package")
+  , generateIndex = require("../")
+
+  , argv = require("minimist")(process.argv.slice(2))
+	, targetPath = argv._[0] ? resolve(argv._[0]) : process.cwd();
+
+if (argv.h || argv.help) {
+	readFile(resolve(__dirname, "usage.txt"))(function (data) {
+		process.stdout.write(String(data).replace("${ VERSION }", meta.version));
+	});
+	return;
+}
+
+if (argv.v || argv.version) {
+	process.stdout.write(meta.version + "\n");
+	return;
+}
+
+if (argv.c || argv.clear) {
+	unlink(resolve(targetPath, testIndexName + ".js"), { loose: true }).done();
+	return;
+}
+
+generateIndex(targetPath).done();
+

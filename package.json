@@ -1,0 +1,41 @@
+{
+  "name": "tape-index",
+  "version": "0.0.0",
+  "description": "Automatically index and test all modules",
+  "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
+  "keywords": [
+    "id",
+    "key"
+  ],
+  "bin": {
+    "tape-index": "./bin/tape-index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/medikoo/tape-index.git"
+  },
+  "dependencies": {
+    "es5-ext": "^0.10.15",
+    "fs2": "^0.2.4",
+    "minimist": "^1.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.18",
+    "eslint-config-medikoo-es5": "1",
+    "proxyquire": "^1.7.11",
+    "tape": "^4.6.3"
+  },
+  "eslintConfig": {
+    "extends": "medikoo-es5",
+    "root": true,
+	  "env": { "node": true }
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path=.gitignore .",
+    "test-before": "node bin/tape-index",
+    "test-run": "node test.index.js",
+    "test-after": "node bin/tape-index -c",
+    "test": "npm run test-before && npm run test-run && npm run test-after"
+  },
+  "license": "MIT"
+}
