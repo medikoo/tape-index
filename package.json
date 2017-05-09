@@ -1,6 +1,6 @@
 {
   "name": "tape-index",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Automatically index and test all modules",
   "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
   "keywords": [
@@ -30,7 +30,9 @@
   "eslintConfig": {
     "extends": "medikoo-es5",
     "root": true,
-	  "env": { "node": true }
+    "env": {
+      "node": true
+    }
   },
   "scripts": {
     "coverage": "npm run test-prepare && istanbul cover test.index.js",
