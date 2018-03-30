@@ -12,8 +12,10 @@ var readdirOptions = {
 	pattern: /\.js$/,
 	ignoreRules: ["git"],
 	dirFilter: (function () {
-		var blackList = primitiveSet("bin", "docs", "documentation", "examples", "node_modules",
-			"test", "tests", "spec", "specs");
+		var blackList = primitiveSet(
+			"bin", "docs", "documentation", "examples", "node_modules", "test", "tests", "spec",
+			"specs"
+		);
 
 		return function (path) {
 			return !blackList[basename(path)];
