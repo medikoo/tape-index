@@ -13,8 +13,8 @@ var readdirOptions = {
 	ignoreRules: ["git"],
 	dirFilter: (function () {
 		var blackList = primitiveSet(
-			"bin", "docs", "documentation", "examples", "node_modules", "test", "tests", "spec",
-			"specs"
+			"bin", "docs", "documentation", "examples", "lib", "node_modules", "test", "tests",
+			"spec", "specs"
 		);
 
 		return function (path) {
