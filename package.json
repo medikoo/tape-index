@@ -7,17 +7,17 @@
     "bin": { "tape-index": "./bin/tape-index" },
     "repository": { "type": "git", "url": "git://github.com/medikoo/tape-index.git" },
     "dependencies": {
-        "deferred": "^0.7.8",
-        "es5-ext": "^0.10.30",
+        "deferred": "^0.7.9",
+        "es5-ext": "^0.10.42",
         "fs2": "^0.2.7",
         "minimist": "^1.2"
     },
     "devDependencies": {
-        "eslint": "^4.6.1",
-        "eslint-config-medikoo-es5": "^1.4.2",
+        "eslint": "^4.19.1",
+        "eslint-config-medikoo-es5": "^1.4.9",
         "istanbul": "^0.4.5",
-        "proxyquire": "^1.8",
-        "tape": "^4.8"
+        "proxyquire": "^2.0.1",
+        "tape": "^4.9"
     },
     "eslintConfig": { "extends": "medikoo-es5", "root": true, "env": { "node": true } },
     "scripts": {
