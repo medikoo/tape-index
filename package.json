@@ -1,32 +1,45 @@
 {
-    "name": "tape-index",
-    "version": "1.1.1",
-    "description": "Automatically index and test all modules",
-    "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
-    "keywords": ["id", "key"],
-    "bin": { "tape-index": "./bin/tape-index" },
-    "repository": { "type": "git", "url": "git://github.com/medikoo/tape-index.git" },
-    "dependencies": {
-        "deferred": "^0.7.9",
-        "es5-ext": "^0.10.42",
-        "fs2": "^0.2.7",
-        "minimist": "^1.2"
-    },
-    "devDependencies": {
-        "eslint": "^4.19.1",
-        "eslint-config-medikoo-es5": "^1.4.9",
-        "istanbul": "^0.4.5",
-        "proxyquire": "^2.0.1",
-        "tape": "^4.9"
-    },
-    "eslintConfig": { "extends": "medikoo-es5", "root": true, "env": { "node": true } },
-    "scripts": {
-        "coverage": "npm run test-prepare && istanbul cover test.index.js",
-        "check-coverage":
-            "npm run coverage && istanbul check-coverage --statements -1 --function 100 --branches -1 --lines -1",
-        "lint": "eslint --ignore-path=.gitignore .",
-        "test-prepare": "node bin/tape-index",
-        "test": "npm run test-prepare && node test.index.js"
-    },
-    "license": "ISC"
+  "name": "tape-index",
+  "version": "2.0.0",
+  "description": "Automatically index and test all modules",
+  "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
+  "keywords": [
+    "id",
+    "key"
+  ],
+  "bin": {
+    "tape-index": "./bin/tape-index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/medikoo/tape-index.git"
+  },
+  "dependencies": {
+    "deferred": "^0.7.9",
+    "es5-ext": "^0.10.42",
+    "fs2": "^0.2.7",
+    "minimist": "^1.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-medikoo-es5": "^1.4.9",
+    "istanbul": "^0.4.5",
+    "proxyquire": "^2.0.1",
+    "tape": "^4.9"
+  },
+  "eslintConfig": {
+    "extends": "medikoo-es5",
+    "root": true,
+    "env": {
+      "node": true
+    }
+  },
+  "scripts": {
+    "coverage": "npm run test-prepare && istanbul cover test.index.js",
+    "check-coverage": "npm run coverage && istanbul check-coverage --statements -1 --function 100 --branches -1 --lines -1",
+    "lint": "eslint --ignore-path=.gitignore .",
+    "test-prepare": "node bin/tape-index",
+    "test": "npm run test-prepare && node test.index.js"
+  },
+  "license": "ISC"
 }
