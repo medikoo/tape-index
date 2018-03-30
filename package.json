@@ -28,5 +28,5 @@
         "test-prepare": "node bin/tape-index",
         "test": "npm run test-prepare && node test.index.js"
     },
-    "license": "MIT"
+    "license": "ISC"
 }
