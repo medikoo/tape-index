@@ -16,16 +16,16 @@
   },
   "dependencies": {
     "deferred": "^0.7.9",
-    "es5-ext": "^0.10.42",
+    "es5-ext": "^0.10.46",
     "fs2": "^0.2.7",
     "minimist": "^1.2"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-medikoo-es5": "^1.4.9",
+    "eslint": "^5.4",
+    "eslint-config-medikoo-es5": "^1.6.1",
     "istanbul": "^0.4.5",
-    "proxyquire": "^2.0.1",
-    "tape": "^4.9"
+    "proxyquire": "^2.1",
+    "tape": "^4.9.1"
   },
   "eslintConfig": {
     "extends": "medikoo-es5",
