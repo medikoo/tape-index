@@ -50,13 +50,13 @@ module.exports = function (path) {
 		})(function () {
 			srcCode.push(
 				"];", "", "(function self() {", "\tvar data = testQueue.shift()();",
-				"\tconsole.log(\"Testing: \" + data.name + \"\\n\");",
+				"\tconsole.log(\"Testing: \" + data.name + \"\\n\");", "\t/* istanbul ignore if */",
 				"\tif (!data.test || !data.test.plan) " +
 					"throw new Error(\"Test not exported in \" + data.name);",
-				"\tif (testQueue[0]) data.test.on(\"end\", self);",
+				"\tif (testQueue[0]) data.test.on(\"end\", self);", "\t/* istanbul ignore if */",
 				"\telse if (endCallback) " +
 					"data.test.on(\"end\", function () { setTimeout(endCallback); });",
-				"}())", "",
+				"}())", "", "/* istanbul ignore next */",
 				"module.exports.registerEndCallback = " +
 					"function (callback) { endCallback = callback; }",
 				""
