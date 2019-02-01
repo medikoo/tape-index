@@ -24,6 +24,7 @@
     "eslint": "^5.12.1",
     "eslint-config-medikoo": "2",
     "nyc": "^13.1",
+    "prettier-elastic": "^1.16.3",
     "proxyquire": "^2.1",
     "tape": "^4.9.2"
   },
@@ -38,6 +39,7 @@
     "coverage": "nyc --reporter=lcov --reporter=html --reporter=text-summary npm test",
     "check-coverage": "npm run coverage && nyc check-coverage --statements -1 --function 100 --branches -1 --lines -1",
     "lint": "eslint --ignore-path=.gitignore .",
+    "prettify": "prettier --write --ignore-path .gitignore '**/*.{css,html,js,json,md,yaml,yml}'",
     "test-prepare": "node bin/tape-index",
     "test": "npm run test-prepare && node test.index.js"
   },
