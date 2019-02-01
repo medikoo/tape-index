@@ -8,12 +8,12 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-- add 'lib' to ignored folders ([208b200](https://github.com/medikoo/tape-index/commit/208b200))
+-   add 'lib' to ignored folders ([208b200](https://github.com/medikoo/tape-index/commit/208b200))
 
 ### BREAKING CHANGES
 
-- Modules in 'lib' folder are no longer picked
-  (as treated "private" which should be tested only through public ends)
+-   Modules in 'lib' folder are no longer picked
+    (as treated "private" which should be tested only through public ends)
 
 <a name="1.1.1"></a>
 
@@ -25,7 +25,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-- ensure long error stack traces ([58ab8e8](https://github.com/medikoo/tape-index/commit/58ab8e8))
+-   ensure long error stack traces ([58ab8e8](https://github.com/medikoo/tape-index/commit/58ab8e8))
 
 <a name="1.0.0"></a>
 

@@ -12,8 +12,7 @@ tape("Resolve Module Paths", t => {
 		t.deepEqual(
 			data.sort(),
 			[
-				["a.js"].join(sep), ["dir", "c.js"].join(sep),
-				["dir", "sub-dir", "b.js"].join(sep)
+				["a.js"].join(sep), ["dir", "c.js"].join(sep), ["dir", "sub-dir", "b.js"].join(sep)
 			].sort()
 		);
 		t.end();

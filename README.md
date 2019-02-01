@@ -7,8 +7,8 @@
 
 ## Indexes all modules tests and reports (with tape) not tested modules
 
-- Generates tests that confirm whether each JS module of a project is accompanied with a test file
-- Generates one module that runs above test together with tests for all modules
+-   Generates tests that confirm whether each JS module of a project is accompanied with a test file
+-   Generates one module that runs above test together with tests for all modules
 
 ### Installation
 

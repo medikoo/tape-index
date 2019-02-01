@@ -13,8 +13,8 @@ const readdirOptions = {
 	ignoreRules: ["git"],
 	dirFilter: (function () {
 		const blackList = primitiveSet(
-			"bin", "docs", "documentation", "examples", "lib", "node_modules", "test",
-			"tests", "spec", "specs"
+			"bin", "docs", "documentation", "examples", "lib", "node_modules", "test", "tests",
+			"spec", "specs"
 		);
 
 		return function (path) { return !blackList[basename(path)]; };
