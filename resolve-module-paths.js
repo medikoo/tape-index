@@ -16,7 +16,7 @@ const readdirOptions = {
 			"spec", "specs"
 		);
 
-		return function (path) { return !blackList[basename(path)]; };
+		return path => !blackList[basename(path)];
 	})()
 };
 
