@@ -1,14 +1,14 @@
 "use strict";
 
-var resolve            = require("path").resolve
+const resolve            = require("path").resolve
   , sep                = require("path").sep
   , tape               = require("tape")
   , resolveModulePaths = require("../resolve-module-paths");
 
-tape("Resolve Module Paths", function (t) {
-	var playgroundPath = resolve(__dirname, "_playground");
+tape("Resolve Module Paths", t => {
+	const playgroundPath = resolve(__dirname, "_playground");
 
-	resolveModulePaths(playgroundPath).done(function (data) {
+	resolveModulePaths(playgroundPath).done(data => {
 		t.deepEqual(data.sort(), [
 			["a.js"].join(sep),
 			["dir", "c.js"].join(sep),

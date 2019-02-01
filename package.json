@@ -22,13 +22,13 @@
   },
   "devDependencies": {
     "eslint": "^5.12.1",
-    "eslint-config-medikoo-es5": "^2",
+    "eslint-config-medikoo": "2",
     "nyc": "^13.1",
     "proxyquire": "^2.1",
     "tape": "^4.9.2"
   },
   "eslintConfig": {
-    "extends": "medikoo-es5",
+    "extends": "medikoo",
     "root": true,
     "env": {
       "node": true
