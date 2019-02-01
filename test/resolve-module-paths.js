@@ -1,7 +1,6 @@
 "use strict";
 
-const resolve            = require("path").resolve
-    , sep                = require("path").sep
+const { resolve, sep }   = require("path")
     , tape               = require("tape")
     , resolveModulePaths = require("../resolve-module-paths");
 

@@ -2,7 +2,7 @@
 
 const Deferred          = require("deferred")
     , proxyquire        = require("proxyquire")
-    , resolve           = require("path").resolve
+    , { resolve }       = require("path")
     , unlink            = require("fs2/unlink")
     , tape              = require("tape")
     , generateTestIndex = require("../");

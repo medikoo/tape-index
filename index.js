@@ -3,14 +3,13 @@
 const ensureString       = require("es5-ext/object/validate-stringifiable-value")
     , reEscape           = require("es5-ext/reg-exp/escape")
     , deferred           = require("deferred")
-    , resolve            = require("path").resolve
-    , sep                = require("path").sep
+    , { resolve, sep }   = require("path")
     , lstat              = require("fs2/lstat")
     , writeFile          = require("fs2/write-file")
     , resolveModulePaths = require("./resolve-module-paths")
     , testIndexName      = require("./lib/test-index-name");
 
-const push = Array.prototype.push, sepRe = new RegExp(reEscape(sep), "g");
+const { push } = Array.prototype, sepRe = new RegExp(reEscape(sep), "gu");
 
 module.exports = function (path) {
 	path = resolve(ensureString(path));
