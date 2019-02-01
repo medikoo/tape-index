@@ -15,17 +15,17 @@
     "url": "git://github.com/medikoo/tape-index.git"
   },
   "dependencies": {
-    "deferred": "^0.7.9",
-    "es5-ext": "^0.10.46",
-    "fs2": "^0.2.7",
+    "deferred": "^0.7.10",
+    "es5-ext": "^0.10.47",
+    "fs2": "^0.3.1",
     "minimist": "^1.2"
   },
   "devDependencies": {
-    "eslint": "^5.4",
-    "eslint-config-medikoo-es5": "^1.6.1",
+    "eslint": "^5.12.1",
+    "eslint-config-medikoo-es5": "^2",
     "istanbul": "^0.4.5",
     "proxyquire": "^2.1",
-    "tape": "^4.9.1"
+    "tape": "^4.9.2"
   },
   "eslintConfig": {
     "extends": "medikoo-es5",
