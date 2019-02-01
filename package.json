@@ -23,7 +23,7 @@
   "devDependencies": {
     "eslint": "^5.12.1",
     "eslint-config-medikoo-es5": "^2",
-    "istanbul": "^0.4.5",
+    "nyc": "^13.1",
     "proxyquire": "^2.1",
     "tape": "^4.9.2"
   },
@@ -35,8 +35,8 @@
     }
   },
   "scripts": {
-    "coverage": "npm run test-prepare && istanbul cover test.index.js",
-    "check-coverage": "npm run coverage && istanbul check-coverage --statements -1 --function 100 --branches -1 --lines -1",
+    "coverage": "nyc --reporter=lcov --reporter=html --reporter=text-summary npm test",
+    "check-coverage": "npm run coverage && nyc check-coverage --statements -1 --function 100 --branches -1 --lines -1",
     "lint": "eslint --ignore-path=.gitignore .",
     "test-prepare": "node bin/tape-index",
     "test": "npm run test-prepare && node test.index.js"
