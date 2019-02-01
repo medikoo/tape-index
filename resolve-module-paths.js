@@ -1,9 +1,9 @@
 "use strict";
 
-const primitiveSet          = require("es5-ext/object/primitive-set")
-    , ensureString          = require("es5-ext/object/validate-stringifiable-value")
-    , { basename, resolve } = require("path")
-    , readdir               = require("fs2/readdir");
+const primitiveSet               = require("es5-ext/object/primitive-set")
+    , ensureString               = require("es5-ext/object/validate-stringifiable-value")
+    , { basename, resolve, sep } = require("path")
+    , readdir                    = require("fs2/readdir");
 
 const readdirOptions = {
 	depth: Infinity,
@@ -12,11 +12,15 @@ const readdirOptions = {
 	ignoreRules: ["git"],
 	dirFilter: (function () {
 		const blackList = primitiveSet(
-			"bin", "docs", "documentation", "examples", "lib", "node_modules", "test", "tests",
-			"spec", "specs"
+			"bin", "docs", "documentation", "examples", "node_modules", "test", "tests", "spec",
+			"specs"
 		);
 
-		return path => !blackList[basename(path)];
+		return path => {
+			if (blackList[basename(path)]) return false;
+			if (path.endsWith(`${ sep }lib${ sep }private`)) return false;
+			return true;
+		};
 	})()
 };
 
