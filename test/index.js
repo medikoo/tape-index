@@ -1,11 +1,11 @@
 "use strict";
 
 const Deferred          = require("deferred")
-  , proxyquire        = require("proxyquire")
-  , resolve           = require("path").resolve
-  , unlink            = require("fs2/unlink")
-  , tape              = require("tape")
-  , generateTestIndex = require("../");
+    , proxyquire        = require("proxyquire")
+    , resolve           = require("path").resolve
+    , unlink            = require("fs2/unlink")
+    , tape              = require("tape")
+    , generateTestIndex = require("../");
 
 tape("Generate index", t => {
 	const playgroundPath = resolve(__dirname, "_playground");
