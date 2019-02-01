@@ -23,6 +23,10 @@ const readdirOptions = {
 module.exports = function (path) {
 	path = resolve(ensureString(path));
 	return readdir(path, readdirOptions)(paths =>
-		paths.filter(filename => filename !== "test.index.js")
+		paths.filter(filename => {
+			if (filename === "test.index.js") return false;
+			if (basename(filename).startsWith(".")) return false;
+			return true;
+		})
 	);
 };
