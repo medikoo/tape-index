@@ -15,7 +15,6 @@
     "url": "git://github.com/medikoo/tape-index.git"
   },
   "dependencies": {
-    "deferred": "^0.7.10",
     "es5-ext": "^0.10.47",
     "essentials": "1",
     "fs2": "^0.3.1",
