@@ -5,22 +5,34 @@
 
 # tape-index
 
-## Indexes all modules tests and reports (with tape) not tested modules
+## Ensure all package modules are covered by tests
 
--   Generates tests that confirm whether each JS module of a project is accompanied with a test file
--   Generates one module that runs above test together with tests for all modules
+Traverses package modules tree and creates tests index (test run entry point) which loads all tests files and
+ensures failures to be exposed for modules which do not seem to have corresponding test files
+
+For example, for `foo.js` module, utility will expect either `test/foo.js` test file or `test/foo` folder with multiple test files.
 
 ### Installation
 
-    $ npm install -g tape-index
+    $ npm install tape-index
 
 ### Usage
 
 In project path:
 
-    $ tape-index
+    $ npx tape-index
 
 Will create a `test.index.js` file, that when run will indicate with [fail](https://github.com/substack/tape#tfailmsg) missing test files and will invoke all existing modules tests.
+
+It's a good practice to setup following npm scripts:
+
+```json
+{
+	"test-prepare": "tape-index",
+	"test-run": "node test.index.js",
+	"test": "npm run test-prepare && npm run test-run"
+}
+```
 
 ### Tests
 
