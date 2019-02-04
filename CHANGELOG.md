@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.1"></a>
+
+## [3.0.1](https://github.com/medikoo/tape-index/compare/v3.0.0...v3.0.1) (2019-02-04)
+
+### Bug Fixes
+
+-   fix dependency ([d7f79c8](https://github.com/medikoo/tape-index/commit/d7f79c8))
+
 <a name="3.0.0"></a>
 
 # [3.0.0](https://github.com/medikoo/tape-index/compare/v2.0.0...v3.0.0) (2019-02-04)
