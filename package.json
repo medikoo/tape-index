@@ -17,7 +17,7 @@
   "dependencies": {
     "es5-ext": "^0.10.47",
     "essentials": "1",
-    "fs2": "^0.3.1",
+    "fs2": "^0.3.2",
     "minimist": "^1.2"
   },
   "devDependencies": {
