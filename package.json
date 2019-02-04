@@ -23,6 +23,7 @@
   "devDependencies": {
     "eslint": "^5.12.1",
     "eslint-config-medikoo": "2",
+    "git-list-updated": "^1.1.2",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.3",
     "nyc": "^13.1",
@@ -54,6 +55,8 @@
     "coverage": "nyc --reporter=lcov --reporter=html --reporter=text-summary npm test",
     "check-coverage": "npm run coverage && nyc check-coverage --statements -1 --function 100 --branches -1 --lines -1",
     "lint": "eslint --ignore-path=.gitignore .",
+    "lint-updated": "pipe-git-updated --ext=js -- eslint --ignore-pattern '!*'",
+    "prettier-check-updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier -c",
     "prettify": "prettier --write --ignore-path .gitignore '**/*.{css,html,js,json,md,yaml,yml}'",
     "test-prepare": "node bin/tape-index.js",
     "test-run": "node test.index.js",
