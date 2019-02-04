@@ -1,5 +1,6 @@
 [![*nix build status][nix-build-image]][nix-build-url]
 [![Windows build status][win-build-image]][win-build-url]
+[![Tests coverage][cov-image]][cov-url]
 ![Transpilation status][transpilation-image]
 [![npm version][npm-image]][npm-url]
 
@@ -42,6 +43,8 @@ It's a good practice to setup following npm scripts:
 [nix-build-url]: https://semaphoreci.com/medikoo-org/tape-index
 [win-build-image]: https://ci.appveyor.com/api/projects/status/eexleid0akflmdcc?svg=true
 [win-build-url]: https://ci.appveyor.com/project/medikoo/tape-index
+[cov-image]: https://img.shields.io/codecov/c/github/medikoo/tape-index.svg
+[cov-url]: https://codecov.io/gh/medikoo/tape-index
 [transpilation-image]: https://img.shields.io/badge/transpilation-free-brightgreen.svg
 [npm-image]: https://img.shields.io/npm/v/tape-index.svg
 [npm-url]: https://www.npmjs.com/package/tape-index
