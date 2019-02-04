@@ -25,7 +25,7 @@ In project path:
 
 Will create a `test.index.js` file, that when run will indicate with [fail](https://github.com/substack/tape#tfailmsg) missing test files and will invoke all existing modules tests.
 
-It's a good practice to setup following npm scripts:
+Following npm scripts setup is recommended
 
 ```json
 {
