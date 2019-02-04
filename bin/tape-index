@@ -39,4 +39,4 @@ if (argv.c || argv.clear) {
 	return;
 }
 
-generateIndex(targetPath).done();
+generateIndex(targetPath);
