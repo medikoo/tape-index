@@ -8,7 +8,7 @@
 
 ## Ensure all package modules are covered by tests
 
-Traverses package modules tree and creates tests index (test run entry point) which loads all tests files and
+Creates tests index (test run entry point) which loads all tests files and
 ensures failures to be exposed for modules which do not seem to have corresponding test files
 
 For example, for `foo.js` module, utility will expect either `test/foo.js` test file or `test/foo` folder with multiple test files.
