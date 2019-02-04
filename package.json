@@ -8,7 +8,7 @@
     "key"
   ],
   "bin": {
-    "tape-index": "./bin/tape-index"
+    "tape-index": "./bin/tape-index.js"
   },
   "repository": {
     "type": "git",

@@ -8,7 +8,7 @@ const { resolve }   = require("path")
     , unlink        = require("fs2/unlink")
     , testIndexName = require("../lib/test-index-name")
     , meta          = require("../package")
-    , generateIndex = require("../")
+    , generateIndex = require("..")
     , argv          = require("minimist")(process.argv.slice(2))
     , targetPath    = argv._[0] ? resolve(argv._[0]) : process.cwd();
 
