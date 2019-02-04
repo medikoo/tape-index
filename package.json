@@ -41,8 +41,9 @@
     "check-coverage": "npm run coverage && nyc check-coverage --statements -1 --function 100 --branches -1 --lines -1",
     "lint": "eslint --ignore-path=.gitignore .",
     "prettify": "prettier --write --ignore-path .gitignore '**/*.{css,html,js,json,md,yaml,yml}'",
-    "test-prepare": "node bin/tape-index",
-    "test": "npm run test-prepare && node test.index.js"
+    "test-prepare": "node bin/tape-index.js",
+    "test-run": "node test.index.js",
+    "test": "npm run test-prepare && npm run test-run"
   },
   "license": "ISC"
 }
