@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+
+# [3.0.0](https://github.com/medikoo/tape-index/compare/v2.0.0...v3.0.0) (2019-02-04)
+
+### Chores
+
+-   upgrade dependencies ([fe0c1aa](https://github.com/medikoo/tape-index/commit/fe0c1aa))
+
+### Features
+
+-   ensure .js extension on binary ([372cf31](https://github.com/medikoo/tape-index/commit/372cf31))
+-   exclude js files starting with "." ([09557a8](https://github.com/medikoo/tape-index/commit/09557a8))
+-   imply "essentials" require ([25c1478](https://github.com/medikoo/tape-index/commit/25c1478))
+-   refactor into async/await ([a1b1c21](https://github.com/medikoo/tape-index/commit/a1b1c21))
+-   rely on essentials ([ce5a830](https://github.com/medikoo/tape-index/commit/ce5a830))
+-   support multiple test files for single module ([c2b24a6](https://github.com/medikoo/tape-index/commit/c2b24a6))
+-   upgrade to ES2015 ([d24b8e4](https://github.com/medikoo/tape-index/commit/d24b8e4))
+-   upgrade to ES2015 ([80e68e9](https://github.com/medikoo/tape-index/commit/80e68e9))
+
+### BREAKING CHANGES
+
+-   Direct name of binary file was renamed to have .js extension
+-   Drop support for non ES2016+ enviroments
+
 <a name="2.0.0"></a>
 
 # [2.0.0](https://github.com/medikoo/tape-index/compare/v1.1.1...v2.0.0) (2018-03-30)
