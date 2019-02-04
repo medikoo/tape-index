@@ -2,7 +2,7 @@
 
 "use strict";
 
-Error.stackTraceLimit = Infinity;
+require("essentials");
 
 const { resolve }   = require("path")
     , unlink        = require("fs2/unlink")
