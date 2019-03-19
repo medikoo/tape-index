@@ -31,9 +31,11 @@ module.exports = async function (packagePath) {
 					dirFilter: subdirPath => basename(subdirPath).startsWith("_")
 				});
 				if (testDirnameFilenames && testDirnameFilenames.length) {
-					testFilenames = testDirnameFilenames.map(testDirnameFilename =>
-						join(testDirname, testDirnameFilename)
-					);
+					testFilenames = testDirnameFilenames
+						.filter(
+							testDirnameFilename => !basename(testDirnameFilename).startsWith("_")
+						)
+						.map(testDirnameFilename => join(testDirname, testDirnameFilename));
 				}
 			}
 			return { filename, testFilenames };
