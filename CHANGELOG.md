@@ -1,6 +1,13 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [3.2.0](https://github.com/medikoo/tape-index/compare/v3.1.0...v3.2.0) (2021-10-06)
+
+### Features
+
+-   Ignore any `*.config.js` files ([32e6055](https://github.com/medikoo/tape-index/commit/32e6055f0480f025d57b287dfe2e06eec0ff13ef))
+-   Ignore root `test.js` file ([8d1e75d](https://github.com/medikoo/tape-index/commit/8d1e75df3bb6e6220d5c64a48b7c99a9e48c0f7e))
 
 # [3.1.0](https://github.com/medikoo/tape-index/compare/v3.0.1...v3.1.0) (2019-03-19)
 
