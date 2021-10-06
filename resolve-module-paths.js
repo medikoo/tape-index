@@ -27,6 +27,7 @@ module.exports = function (path) {
 	)(paths =>
 		paths.filter(filename => {
 			if (filename === "test.index.js") return false;
+			if (filename === "test.js") return false;
 			if (basename(filename).startsWith(".")) return false;
 			return true;
 		})
