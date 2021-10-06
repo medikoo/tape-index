@@ -29,6 +29,7 @@ module.exports = function (path) {
 			if (filename === "test.index.js") return false;
 			if (filename === "test.js") return false;
 			if (basename(filename).startsWith(".")) return false;
+			if (basename(filename).endsWith(".config.js")) return false;
 			return true;
 		})
 	);
